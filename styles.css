@@ -1,0 +1,158 @@
+/* Общие стили для всего сайта */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #D1D1D1;
+    margin: 0;
+    padding: 0;
+}
+
+/* Заголовок сайта */
+header {
+    background-color: #000;
+    padding: 40px 0;
+    text-align: center;
+    color: #9B59B6;
+}
+
+h1 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 2.5rem;
+    font-weight: 700; /* Увеличена жирность */
+    margin-bottom: 10px;
+    text-shadow: none;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #D1D1D1;
+    text-shadow: none;
+}
+
+/* Основные блоки */
+section {
+    background-color: #111;
+    margin: 30px auto;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 1200px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Заголовки блоков */
+h2 {
+    font-family: 'Comfortaa', cursive;
+    color: #9B59B6;
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: 700; /* Жирные заголовки */
+}
+
+/* Описание в блоках */
+p {
+    font-size: 1.1rem;
+    color: #D1D1D1;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Стилизация для блоков проектов */
+.project-item {
+    background-color: #1C1C1C;
+    border: 2px solid #9B59B6;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.project-item:hover {
+    border-color: #8A2BE2;
+}
+
+.project-item h3 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.3rem;
+    color: #9B59B6;
+    margin-bottom: 10px;
+    font-weight: 700; /* Жирный шрифт для названия проекта */
+}
+
+.project-item p {
+    font-size: 1rem;
+    color: #D1D1D1;
+}
+
+/* Ссылки */
+a {
+    color: #9B59B6;
+    text-decoration: none;
+    font-weight: normal;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #8A2BE2;
+}
+
+/* Стилизация для футера */
+footer {
+    background-color: #111;
+    text-align: right;
+    padding: 20px 0;
+    color: #D1D1D1;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Контейнер */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Стили для блоков с ссылками */
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.footer-links a {
+    font-size: 1rem;
+    color: #A3A3A3;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #9B59B6;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+    header {
+        padding: 30px 0;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
+
+    .footer-links a {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
